@@ -1,10 +1,6 @@
-pkgs.mkShell {
-  buildInputs = [
+{ pkgs }: {
+  deps = [
     pkgs.wget
     pkgs.python311
   ];
-
-  shellHook = ''
-    export PYTHON="${pkgs.python311}/bin/python"
-  '';
 }
