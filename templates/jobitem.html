@@ -8,10 +8,9 @@
     </p>
     <p>
         {% if job['salary'] %}
-            <b>Salary: </b>{{ job['salary'] }}
+            <b>Salary: </b>{{ job['currency'] }} {{ job['salary'] }}
         {% endif %}
     </p>
-
 
   </div>
     <div class="col-3">
