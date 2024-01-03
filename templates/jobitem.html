@@ -6,11 +6,13 @@
     <p>
       <b>Location: </b>{{job['location']}}
     </p>
-    {% if 'salary' in job %}
-    <div>
-      <p>Salary: $USD {{job['salary']}}</p>
-    </div>
-    {% endif %}
+    <p>
+        {% if job['salary'] %}
+            <b>Salary: </b>{{ job['salary'] }}
+        {% endif %}
+    </p>
+
+
   </div>
     <div class="col-3">
       <button type="button" class="btn btn-outline-primary ">Apply</button>
