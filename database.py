@@ -7,3 +7,5 @@ engine = create_engine(db_connection_string,
                        connect_args={"ssl": {
                            "ssl_ca": "certs/DigiCertGlobalRootCA.crt.pem"
                        }})
+
+# nothing
