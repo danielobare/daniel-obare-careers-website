@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, render_template, request
 from sqlalchemy import text
 from database import engine
+import os
 
 app = Flask(__name__)
 
@@ -26,14 +27,34 @@ def list_jobs():
 @app.route("/apply/<int:job_id>", methods=["GET", "POST"])
 def apply_to_job(job_id):
     if request.method == "POST":
-        applicant_name = request.form.get('name')
-        applicant_email = request.form.get('email')
-        resume = request.form.get('resume')
+        name = request.form.get('name')
+        email = request.form.get('email')
+        phone = request.form.get('phone')
+        address = request.form.get('address')
+        linkedin_profile = request.form.get('linkedin')
+        portfolio_link = request.form.get('portfolio')
+        cover_letter = request.form.get('cover_letter')
+        resume_file = request.files['resume']
 
-        print(f"Application received for Job ID {job_id}:")
-        print(f"Name: {applicant_name}, Email: {applicant_email}, Resume: {resume}")
+        resume_data = resume_file.read()
 
-        return render_template('thank_you.html', name=applicant_name)
+        with engine.connect() as conn:
+            conn.execute(text("""
+                INSERT INTO applications (job_id, name, email, phone, address, linkedin_profile, portfolio_link, cover_letter, resume)
+                VALUES (:job_id, :name, :email, :phone, :address, :linkedin_profile, :portfolio_link, :cover_letter, :resume)
+            """), {
+                'job_id': job_id,
+                'name': name,
+                'email': email,
+                'phone': phone,
+                'address': address,
+                'linkedin_profile': linkedin_profile,
+                'portfolio_link': portfolio_link,
+                'cover_letter': cover_letter,
+                'resume': resume_data,
+            })
+
+        return render_template('thank_you.html', name=name)
 
     return render_template('apply.html', job_id=job_id)
 

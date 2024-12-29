@@ -4,20 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply for Job</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        h1 {
+            color: #007BFF;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Apply for Job {{ job_id }}</h1>
-    <form method="POST">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <div class="form-container">
+        <h1>Apply for Job {{ job_id }}</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="resume">Resume (Paste Link or Text):</label><br>
-        <textarea id="resume" name="resume" rows="4" required></textarea><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
 
-        <button type="submit">Submit Application</button>
-    </form>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="2"></textarea>
+
+            <label for="linkedin">LinkedIn Profile:</label>
+            <input type="url" id="linkedin" name="linkedin">
+
+            <label for="portfolio">Portfolio Link:</label>
+            <input type="url" id="portfolio" name="portfolio">
+
+            <label for="cover_letter">Cover Letter:</label>
+            <textarea id="cover_letter" name="cover_letter" rows="3"></textarea>
+
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume" name="resume" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
 </body>
 </html>
