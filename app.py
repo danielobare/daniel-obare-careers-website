@@ -26,10 +26,9 @@ def list_jobs():
 @app.route("/apply/<int:job_id>", methods=["GET", "POST"])
 def apply_to_job(job_id):
     if request.method == "POST":
-        # Process the application form data here
         applicant_name = request.form.get('name')
         applicant_email = request.form.get('email')
-        resume = request.form.get('resume')  # Example field
+        resume = request.form.get('resume')
 
         print(f"Application received for Job ID {job_id}:")
         print(f"Name: {applicant_name}, Email: {applicant_email}, Resume: {resume}")
