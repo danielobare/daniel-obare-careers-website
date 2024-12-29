@@ -1,7 +1,6 @@
 from flask import Flask, jsonify, render_template, request
 from sqlalchemy import text
 from database import engine
-import os
 
 app = Flask(__name__)
 
@@ -9,7 +8,7 @@ app = Flask(__name__)
 def load_jobs_from_db():
     with engine.connect() as conn:
         result = conn.execute(text("SELECT * FROM jobs"))
-        jobs = result.all()
+        jobs = [dict(row) for row in result]  # Convert rows to dictionaries
         return jobs
 
 
@@ -26,6 +25,14 @@ def list_jobs():
 
 @app.route("/apply/<int:job_id>", methods=["GET", "POST"])
 def apply_to_job(job_id):
+    with engine.connect() as conn:
+        job = conn.execute(text("SELECT * FROM jobs WHERE id = :job_id"), {'job_id': job_id}).fetchone()
+
+    if not job:
+        return "Job not found", 404
+
+    job_title = job['title']
+
     if request.method == "POST":
         name = request.form.get('name')
         email = request.form.get('email')
@@ -56,7 +63,7 @@ def apply_to_job(job_id):
 
         return render_template('thank_you.html', name=name)
 
-    return render_template('apply.html', job_id=job_id)
+    return render_template('apply.html', job_id=job_id, job_title=job_title)
 
 
 if __name__ == "__main__":
