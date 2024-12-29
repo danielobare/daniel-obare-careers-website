@@ -1,0 +1,125 @@
+id,title,location,salary,currency,responsibilities,requirements
+1,"Data Analyst","Bengaluru India",35000,$USD,"Analyze and interpret complex data sets to uncover trends, patterns, and insights.
+Develop and maintain databases, data systems, and dashboards.
+Collaborate with cross-functional teams to understand business needs and provide data-driven solutions.
+Perform data cleansing, validation, and quality assurance activities.
+Present findings and insights to both technical and non-technical stakeholders.
+Stay current with industry trends and emerging technologies in data analysis.","Bachelor's degree in a relevant field (e.g., Statistics, Mathematics, Computer Science).
+Proven experience as a Data Analyst or in a similar role.
+Proficiency in SQL, Excel, and data visualization tools (e.g., Tableau, Power BI).
+Strong analytical and problem-solving skills.
+Excellent communication and presentation skills.
+Familiarity with statistical analysis and modeling techniques.
+Detail-oriented with a focus on accuracy."
+2,"Backend Developer","Nairobi, Kenya",470000,KSh.,"Design, develop, and maintain efficient and reliable server-side applications.
+Collaborate with front-end developers, system administrators, and other team members to integrate user-facing elements with server-side logic.
+Implement security and data protection measures.
+Participate in code reviews, debugging, and troubleshooting.
+Optimize application performance and scalability.
+Stay updated on emerging technologies and contribute to the continuous improvement of our development processes.","Bachelor's degree in Computer Science or related field.
+Proven experience as a Backend Developer or similar role.
+Proficiency in server-side languages such as Python, Node.js, or Java.
+Experience with databases (e.g., MySQL, MongoDB, PostgreSQL).
+Familiarity with web servers (e.g., Nginx, Apache) and cloud services.
+Understanding of RESTful APIs and microservices architecture.
+Version control using Git and familiarity with CI/CD pipelines.
+Strong problem-solving and analytical skills."
+3,"Front End Developer","London, UK",31000,£,"Develop and maintain responsive and user-friendly web interfaces.
+Collaborate closely with UI/UX designers to implement design concepts into functional code.
+Optimize applications for maximum speed and scalability.
+Ensure the technical feasibility of UI/UX designs and implement cross-browser compatibility.
+Participate in code reviews, testing, and debugging.
+Stay up-to-date with emerging frontend technologies and industry trends.","Bachelor's degree in Computer Science, Web Development, or related field.
+Proven experience as a Frontend Developer or similar role.
+Proficiency in HTML, CSS, JavaScript, and modern frontend frameworks (e.g., React, Angular, Vue).
+Experience with responsive design and mobile-first development.
+Familiarity with version control systems (e.g., Git).
+Strong understanding of web performance optimization techniques.
+Excellent problem-solving and communication skills."
+4,"Back End Developer Team Lead","Nairobi, kenya",1200000,KSh.,"Lead the design and development of scalable and high-performance backend systems.
+Mentor and guide junior developers, fostering a collaborative and knowledge-sharing culture.
+Collaborate with cross-functional teams to define technical requirements and system architectures.
+Implement best practices for security, data protection, and system monitoring.
+Conduct code reviews and ensure adherence to coding standards and guidelines.
+Troubleshoot and resolve complex technical issues and challenges.
+Stay abreast of industry trends and emerging technologies.","Bachelor's degree in Computer Science or related field.
+Proven experience as a Senior Backend Developer or similar leadership role.
+In-depth knowledge of server-side languages such as Python, Node.js, or Java.
+Expertise in designing and implementing databases (e.g., MySQL, MongoDB, PostgreSQL).
+Experience with cloud platforms and services (e.g., AWS, Azure, Google Cloud).
+Strong understanding of microservices architecture and RESTful APIs.
+Proficiency in version control using Git and CI/CD pipelines.
+Excellent problem-solving, communication, and leadership skills."
+5,"Daniel Obare Nyakundi","Manchester, UK",NULL,KSh.,"Senior Software Engineer","MBA Oxford University"
+6,"AWS Solutions Architect","Seattle, USA",100000,$USD,"Solution Design: Collaborate with clients and internal teams to understand business requirements and design AWS-based solutions that align with organizational goals. Create architecture blueprints, diagrams, and documentation to guide the implementation.
+
+Cloud Infrastructure: Lead the design and deployment of scalable, reliable, and secure cloud infrastructure on AWS. This includes selecting appropriate AWS services and configuring them to meet specific project requirements.
+
+Security and Compliance: Implement best practices for security and compliance in AWS environments. Ensure that cloud solutions adhere to industry standards and regulatory requirements. Conduct regular security assessments and recommend improvements.
+
+Migration and Integration: Provide expertise in migrating on-premises applications and data to the AWS cloud. Integrate AWS services with existing systems, ensuring seamless interoperability and optimal performance.
+
+Cost Optimization: Optimize AWS costs by recommending and implementing efficient resource utilization strategies. Monitor and analyze AWS billing and usage reports, making cost-effective recommendations.
+
+Performance Tuning: Identify and resolve performance bottlenecks in AWS environments. Conduct regular performance assessments and implement improvements to enhance system efficiency.
+
+Collaboration: Work closely with cross-functional teams, including developers, system administrators, and network engineers, to ensure successful implementation and operation of AWS solutions. Provide guidance and support during the entire project lifecycle.
+
+Emerging Technologies: Stay abreast of the latest AWS services, features, and industry trends. Evaluate new technologies and provide recommendations for their adoption to enhance overall cloud capabilities.","Bachelor's degree in Computer Science, Information Technology, or related field.
+Proven experience as a Cloud Solutions Architect, with a focus on AWS.
+AWS certifications (e.g., AWS Certified Solutions Architect) are highly desirable.
+Strong understanding of cloud computing concepts and principles.
+Proficiency in designing and implementing AWS-based solutions using Infrastructure as Code (IaC) tools like AWS CloudFormation or Terraform.
+Knowledge of security best practices and experience implementing security controls in AWS environments.
+Excellent communication skills with the ability to convey complex technical concepts to both technical and non-technical stakeholders."
+7,"Senior Java Developer","Rome, Italy",260000,$USD,"Design and Development: Lead the design and implementation of complex, scalable, and high-performance Java applications, ensuring the highest standards of quality and efficiency.
+
+Architecture: Contribute to the architectural decisions and provide technical expertise in the development of robust and maintainable software solutions.
+
+Code Review: Collaborate with team members to conduct thorough code reviews, ensuring adherence to coding standards, best practices, and scalability requirements.
+
+Performance Optimization: Identify and address performance bottlenecks, ensuring optimal performance of Java applications.
+
+Integration: Work closely with cross-functional teams to integrate Java applications with existing systems and third-party services.
+
+Troubleshooting: Diagnose and resolve complex issues in a timely and efficient manner, providing technical support when necessary.","Bachelor's or Master’s degree in Computer Science or a related field.
+7 years of proven experience as a Java Developer, demonstrating expertise in Java programming, Spring Framework, and related technologies.
+Proficiency in Java and J2EE technologies.
+Extensive experience with Spring Framework, Hibernate, and other related frameworks.
+Strong understanding of microservices architecture and RESTful web services.
+Experience with database design and optimization (SQL, NoSQL).
+Familiarity with front-end technologies (HTML, CSS, JavaScript).
+Knowledge of agile development methodologies.
+Excellent problem-solving and analytical skills.
+Strong communication and collaboration abilities."
+8,"Agile Software Developer","Nairobi, Kenya",90000,$USD,"As an Agile Software Developer, you will be an integral part of our development team, contributing to the design, development, and implementation of high-quality software solutions. Your responsibilities will include:
+
+Collaborating with cross-functional teams to gather and define project requirements.
+Participating in agile ceremonies, including sprint planning, daily stand-ups, sprint reviews, and retrospectives.
+Designing and implementing software solutions that meet business requirements and align with best practices.
+Writing clean, efficient, and maintainable code.
+Conducting code reviews and providing constructive feedback to team members.
+Identifying and addressing technical debt to ensure codebase health.
+Keeping abreast of industry trends and best practices to continuously improve development processes.","To succeed in this role, you should have:
+
+Proven experience as a Software Developer with a focus on agile methodologies.
+Proficiency in one or more programming languages (e.g., Java, Python, JavaScript).
+Strong understanding of agile principles and experience working in agile teams.
+Excellent problem-solving skills and attention to detail.
+Ability to work collaboratively in a team environment.
+Good communication skills and the ability to convey complex technical concepts to non-technical stakeholders.
+Familiarity with modern development tools and frameworks.
+
+Education and Experience:
+
+Bachelor's degree in Computer Science, Engineering, or a related field.
+Minimum 4 years of experience in software development, with a focus on agile methodologies."
+9,"Algorithm Software Intern","Onsite in Somerville, MA",10000,$USD,"Develop novel and performant algorithms in modern C++ to tackle problems related to laser path planning, physics modeling, computational geometry, and 3D rendering
+Optimize and improve existing code to make every clock cycle count
+End-to-end feature development including design, implementation, and validation
+Cross platform (Win, Mac) desktop application development using C++17 and Qt
+Design and implement well-structured code with strong focus on maintainability, reusability, and testing
+Work in an agile product-focused environment","Interested in developing high-performance software at the intersection of mathematics and science
+Comfortable tackling complex problems in unfamiliar domains, reading papers to understand the state-of-the-art 
+Interested in image processing and geometry algorithms, parallel computing, and related mathematics
+Experienced in developing and optimizing low-level software (bonus points for C++!)"
