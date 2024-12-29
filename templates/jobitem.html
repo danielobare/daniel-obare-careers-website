@@ -1,7 +1,8 @@
 <div style="margin-bottom: auto; padding-bottom: auto; margin-left: auto; margin-right: auto" class="border-bottom row">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
+  <div>
+    <div>
+      <div>
+        <br>
         <h4 margin-bottom: 4px style="color:rgb(120,120,120)">
           {{job['title']}}
         </h4>
@@ -13,6 +14,13 @@
                 <b>Salary: </b>{{ job['currency'] }} {{ job['salary'] }}
             {% endif %}
         </p>
+        <p>
+          <b>Description: </b><br>{{job['responsibilities']}}
+        </p>
+        <p>
+          <b>Requirements: </b><br>{{job['requirements']}}
+        </p>
+        <br>
       </div>
       <div class="col" style="margin-top: 35px">
         <button type="button" class="btn btn-outline-primary ">Apply</button>
